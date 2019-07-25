@@ -1,0 +1,26 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  max-width: 900px;
+  padding: 20px
+}
+
+body {
+  margin: 1rem;
+  font: 12px system-ui;
+}
+
+.card {
+  max-width: 800px;
+}
+
+.header-image1 {
+  background-image: url('https://yt3.ggpht.com/a/AGF-l784OUQLYfEn7Hiwd-CGG0vXtwwALwmrPolw9A=s900-mo-c-c0xffffffff-rj-k-no');
+  background-size: cover;
+}
+
+.header-image2 {
+  background-image: url('https://i.ytimg.com/vi/hyPnJudsazY/maxresdefault.jpg');
+  background-size: cover;
+}
