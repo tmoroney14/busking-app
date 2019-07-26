@@ -1,24 +1,26 @@
+
 <div class="mat-app-background">
 
-<div class="grid">
+<div class="grid" *ngFor="let busker of buskers; index as buskerId">
 <mat-card class="card">
   <mat-card-header>
-    <div mat-card-avatar class="header-image1"></div>
-    <mat-card-title>Allie Sherlock</mat-card-title>
+    <div mat-card-avatar class="{{ busker.header }}"></div>
+    <mat-card-title>{{ busker.name }}</mat-card-title>
     <mat-card-subtitle>Busker on Grafton Street</mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image src="https://static1.squarespace.com/static/5bb22f5711f7844a36489bca/5c5a0a06c83025d7e54d5388/5c5a0a4deef1a12d338b688d/1549404749200/?format=500w" alt="Photo of a Allie Sherlock">
+  <img mat-card-image src="{{ busker.image }}" alt="Photo of {{ busker.name }}">
   <mat-card-content>
     <p>
-      Aged 14, Allie comes down from Cork with her dad every weekend to busk on Grafton Street.
+      {{ busker.description }}
     </p>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button [routerLink]="['/details']">More Information</button>
+    <button mat-button [routerLink]="['/buskers', buskerId]">More Information</button>
     <button mat-button>VIDEOS</button>
   </mat-card-actions>
 </mat-card>
 
+<!--
 <mat-card class="card">
   <mat-card-header>
     <div mat-card-avatar class="header-image2"></div>
@@ -72,4 +74,5 @@
     <button mat-button>VIDEOS</button>
   </mat-card-actions>
 </mat-card>
+-->
 </div>

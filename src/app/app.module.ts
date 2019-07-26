@@ -14,7 +14,7 @@ import { MatCardModule } from '@angular/material/card';
 import { AppComponent } from './app.component';
 import { LogoComponent } from './logo/logo.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
-import { BuskersListComponent } from './buskers/buskers-list.component';
+import { BuskersListComponent } from './buskers-list/buskers-list.component';
 import { HomeComponent } from './home/home.component';
 import { DetailsComponent } from './details/details.component';
 

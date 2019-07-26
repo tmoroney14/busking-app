@@ -10,9 +10,14 @@ import { buskers } from '../buskers';
 })
 export class DetailsComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+  ) {}
 
   ngOnInit() {
-  }
+  this.route.paramMap.subscribe(params => {
+    this.busker = buskers[+params.get('buskerId')];
+  });
+}
 
 }
