@@ -14,7 +14,7 @@ import { MatCardModule } from '@angular/material/card';
 import { AppComponent } from './app.component';
 import { LogoComponent } from './logo/logo.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
-import { BuskersComponent } from './buskers/buskers.component';
+import { BuskersListComponent } from './buskers/buskers-list.component';
 import { HomeComponent } from './home/home.component';
 import { DetailsComponent } from './details/details.component';
 
@@ -31,7 +31,7 @@ import { DetailsComponent } from './details/details.component';
     MatCardModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
-      { path: 'buskers', component: BuskersComponent },
+      { path: 'buskers', component: BuskersListComponent },
       { path: 'buskers/:buskerId', component: DetailsComponent },
       { path: 'toolbar', component: ToolbarComponent },
     ])
@@ -41,7 +41,7 @@ import { DetailsComponent } from './details/details.component';
     AppComponent,
     LogoComponent,
     ToolbarComponent,
-    BuskersComponent,
+    BuskersListComponent,
     HomeComponent,
     DetailsComponent,
   ],
