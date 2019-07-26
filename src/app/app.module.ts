@@ -16,6 +16,7 @@ import { LogoComponent } from './logo/logo.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { BuskersComponent } from './buskers/buskers.component';
 import { HomeComponent } from './home/home.component';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   imports:      [
@@ -31,6 +32,7 @@ import { HomeComponent } from './home/home.component';
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'buskers', component: BuskersComponent },
+      { path: 'buskers/:buskerId', component: DetailsComponent },
       { path: 'toolbar', component: ToolbarComponent },
     ])
   ],
@@ -41,6 +43,7 @@ import { HomeComponent } from './home/home.component';
     ToolbarComponent,
     BuskersComponent,
     HomeComponent,
+    DetailsComponent,
   ],
 
   bootstrap: [ AppComponent ]

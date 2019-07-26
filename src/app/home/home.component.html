@@ -1,9 +1,8 @@
+
 <body>
-<app-toolbar></app-toolbar>
-
-<ul class="flex-container">
-  <li class="flex-item">
-    <svg viewBox="0 0 900 600">
+  <div class="svg-container">
+    <svg viewBox="0 0 900 400" preserveAspectRatio="xMidYMin slice"
+   style="width: 100%; height: 1px; overflow: visible">
     <symbol id="s-text">
     <text class="text--line" y="35%" x="50%" text-anchor="middle">
     Grafton Street
@@ -24,42 +23,21 @@
 
 
     </svg>
-  </li>
-  <li class="flex-item">
-    <button mat-raised-button color="accent" [routerLink]="['/buskers']">Primary</button>
-  </li>
-  <li class="flex-item">3</li>
-</ul>
-<!--
-<ul class="flex-container">
-  <li class="flex-item">
-    <svg viewBox="0 0 900 600">
-    <symbol id="s-text">
-    <text class="text--line" y="35%" x="50%" text-anchor="middle">
-    Grafton Street
-    </text>
-    <text class="text--line2" y="68%" x="50%" text-anchor="middle">
-    Music
-    </text>
+  
+  </div>
+  <div class="grid-container">
+    <div class="item1">
+      <button mat-raised-button color="accent" [routerLink]="['/buskers']">Buskers</button>
+    </div>
+    <div class="item2">
+      <button mat-raised-button color="accent" [routerLink]="['/buskers']">Buskers</button>
+    </div>
+  </div>
 
-    </symbol>
-
-    <g class="g-ants">
-      <use class="text-copy" xlink:href="#s-text"/>
-      <use class="text-copy" xlink:href="#s-text"/>
-      <use class="text-copy" xlink:href="#s-text"/>
-      <use class="text-copy" xlink:href="#s-text"/>
-      <use class="text-copy" xlink:href="#s-text"/>
-    </g>
+    
 
 
-    </svg>
-  </li>
-  <li class="flex-item">
-    <button mat-raised-button color="accent" [routerLink]="['/buskers']">Primary</button>
-  </li>
-</ul>
--->
+</body>
 
   <!--  
   <mat-grid-list cols="2" rowHeight="">
@@ -70,7 +48,4 @@
   </mat-grid-list>
   -->
 
-
-
-</body>
 
