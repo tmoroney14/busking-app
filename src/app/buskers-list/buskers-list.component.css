@@ -8,6 +8,7 @@
 
 .card {
   max-width: 800px;
+  cursor: pointer;
 }
 
 .header-image {

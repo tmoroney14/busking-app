@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca|Raleway|Roboto&display=swap');
+
+div {
+  height: 100%;
+  margin-left: 12px;
+  margin-right: 12px
+}
+
+h3 {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 50px
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px
+}

@@ -7,3 +7,6 @@ html, body {
   margin: -8px;
 }
 
+.mat-app-background {
+  height:100%
+}

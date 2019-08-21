@@ -2,7 +2,7 @@
 <div class="mat-app-background">
 <div class="grid">
 <div *ngFor="let busker of buskers; index as buskerId">
-<mat-card class="card">
+<mat-card class="card" [routerLink]="['/buskers', buskerId]">
   <mat-card-header>
     <div mat-card-avatar class="{{ busker.header }}"></div>
     <mat-card-title>{{ busker.name }}</mat-card-title>
@@ -16,7 +16,7 @@
   </mat-card-content>
   <mat-card-actions>
     <button mat-button [routerLink]="['/buskers', buskerId]">More Information</button>
-    <button mat-button>VIDEOS</button>
+    <button mat-button [routerLink]="['/buskers', buskerId]">VIDEOS</button>
   </mat-card-actions>
 </mat-card>
 
