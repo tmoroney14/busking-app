@@ -3,22 +3,20 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 1rem;
   max-width: 100%;
-  padding: 20px
+  padding: 25px
 }
 
 .card {
   max-width: 800px;
+  border-radius: 8px;
+}
+
+mat-card-title {
   cursor: pointer;
 }
 
-.mat-card .mat-card-actions {
-  margin-bottom: -4px;
-}
-
-
-
 .header-image {
-  background-size: cover;
+  cursor: pointer;
 }
 
 .header-image1 {

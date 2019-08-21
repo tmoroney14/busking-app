@@ -1,7 +1,9 @@
 <body class="mat-app-background">
   <app-toolbar></app-toolbar>
   <div class="container">
-    <router-outlet></router-outlet>
+    <div [@routeAnimations]="prepareRoute(outlet)" >
+    <router-outlet #outlet="outlet"></router-outlet>
+    </div>
   </div>
 </body>
 

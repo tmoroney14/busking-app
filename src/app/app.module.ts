@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
-import { MaterialModule } from './material';
 
+import { MaterialModule } from './material';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -34,8 +34,8 @@ import { DetailsComponent } from './details/details.component';
     MatTabsModule,
     MatRippleModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent },
-      { path: 'buskers', component: BuskersListComponent },
+      { path: '', component: HomeComponent, data: { animation: 'isLeft' } },
+      { path: 'buskers', component: BuskersListComponent, data: { animation: 'isRight' } },
       { path: 'buskers/:buskerId', component: DetailsComponent },
       { path: 'toolbar', component: ToolbarComponent },
     ])
