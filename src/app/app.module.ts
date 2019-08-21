@@ -11,6 +11,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatRippleModule } from '@angular/material/core';
 
 import { AppComponent } from './app.component';
 import { LogoComponent } from './logo/logo.component';
@@ -31,6 +32,7 @@ import { DetailsComponent } from './details/details.component';
     MatGridListModule,
     MatCardModule,
     MatTabsModule,
+    MatRippleModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'buskers', component: BuskersListComponent },
