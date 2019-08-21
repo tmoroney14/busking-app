@@ -11,6 +11,12 @@
   cursor: pointer;
 }
 
+.mat-card .mat-card-actions {
+  margin-bottom: -4px;
+}
+
+
+
 .header-image {
   background-size: cover;
 }
