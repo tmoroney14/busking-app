@@ -1,5 +1,7 @@
 <div>
 
+
+
 <div *ngIf="busker">
   <h3>{{ busker.name }}</h3>
   <p> {{ busker.description }} </p>
@@ -7,12 +9,14 @@
 
 <mat-tab-group mat-stretch-tabs class="example-stretched-tabs">
   <mat-tab label="Videos">
+    <mat-card>
+      <h3 style="font-size: 30px">Recorded Videos</h3>
+      <iframe width="100%" height="400" src="{{buskers.videos}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </mat-card>
+    <mat-card>
+      <h3  style="font-size: 30px">Livestreams</h3>
+    </mat-card>
 
-    <h3 style="font-size: 30px">Recorded Videos</h3>
-    <iframe width="100%" height="400" src="https://www.youtube.com/embed/videoseries?list=PLkNQ3IPg_TnUYqGHwWVdEq50pNR16T9iH" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-    <h3  style="font-size: 30px">Livestreams</h3>
-    
   </mat-tab>
   <mat-tab label="Music">
     <iframe src="https://open.spotify.com/embed/artist/2yTmZ1PwFKkO0FjQp2flPl" width="100%" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>

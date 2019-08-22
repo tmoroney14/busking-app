@@ -5,13 +5,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 
 import { MaterialModule } from './material';
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatRippleModule } from '@angular/material/core';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { AppComponent } from './app.component';
 import { LogoComponent } from './logo/logo.component';
@@ -27,12 +27,12 @@ import { DetailsComponent } from './details/details.component';
     FormsModule,
     BrowserAnimationsModule,
     MaterialModule,
-    MatProgressSpinnerModule,
     MatToolbarModule,
     MatGridListModule,
     MatCardModule,
     MatTabsModule,
     MatRippleModule,
+    MatSidenavModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, data: { animation: 'isLeft' } },
       { path: 'buskers', component: BuskersListComponent, data: { animation: 'isRight' } },

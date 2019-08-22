@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { DomSanitizer } from "@angular/platform-browser";
 
 import { buskers } from '../buskers';
 
@@ -9,6 +11,14 @@ import { buskers } from '../buskers';
   styleUrls: ['./details.component.css']
 })
 export class DetailsComponent implements OnInit {
+  @ViewChild('sidenav') sidenav: MatSidenavModule;
+
+  @HostListener('window:resize', ['$event'])
+    onResize(event) {
+        if (event.target.innerWidth < 500) {
+            this.sidenav.close();
+        }
+    }
 
   constructor(
     private route: ActivatedRoute,
