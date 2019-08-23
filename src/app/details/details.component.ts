@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
+import { Component, OnInit, ViewChild, HostListener, Pipe, PipeTransform } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { DomSanitizer } from "@angular/platform-browser";
@@ -19,6 +19,8 @@ export class DetailsComponent implements OnInit {
             this.sidenav.close();
         }
     }
+
+    
 
   constructor(
     private route: ActivatedRoute,
