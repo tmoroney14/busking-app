@@ -17,10 +17,11 @@ p {
 }
 
 .mat-card {
-  margin: 15px;
+  margin: 6px;
+  margin-top: 15px;
 }
 
-.example-container {
+.container {
   width: 400px;
   height: 200px;
   margin: 10px;

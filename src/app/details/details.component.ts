@@ -1,8 +1,8 @@
-import { Component, OnInit, ViewChild, HostListener, Pipe, PipeTransform } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
+import { ActivatedRoute, RouterModule, Routes } from '@angular/router';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { DomSanitizer } from "@angular/platform-browser";
 
+import { SafePipe } from '../safe.pipe';
 import { buskers } from '../buskers';
 
 @Component({
@@ -10,7 +10,10 @@ import { buskers } from '../buskers';
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.css']
 })
+
+
 export class DetailsComponent implements OnInit {
+
   @ViewChild('sidenav') sidenav: MatSidenavModule;
 
   @HostListener('window:resize', ['$event'])
@@ -19,7 +22,6 @@ export class DetailsComponent implements OnInit {
             this.sidenav.close();
         }
     }
-
     
 
   constructor(
@@ -30,6 +32,5 @@ export class DetailsComponent implements OnInit {
   this.route.paramMap.subscribe(params => {
     this.busker = buskers[+params.get('buskerId')];
   });
-}
-
+  }
 }

@@ -2,14 +2,21 @@ export const buskers = [
   { 
     header: 'https://yt3.ggpht.com/a/AGF-l784OUQLYfEn7Hiwd-CGG0vXtwwALwmrPolw9A=s900-mo-c-c0xffffffff-rj-k-no',
     image: 'https://static1.squarespace.com/static/5bb22f5711f7844a36489bca/5c5a0a06c83025d7e54d5388/5c5a0a4deef1a12d338b688d/1549404749200/?format=500w',
+    other: 'Livestreams',
     videos: 'https://www.youtube.com/embed/videoseries?list=PLkNQ3IPg_TnUYqGHwWVdEq50pNR16T9iH',
     live: 'https://www.youtube.com/embed/videoseries?list=TLGGQ_HuxeraarkyMjA4MjAxOQ&index=1',
+    music1: 'https://open.spotify.com/embed/artist/2yTmZ1PwFKkO0FjQp2flPl',
     name: 'Allie Sherlock',
     description: 'Aged 14, Allie comes down from Cork with her dad every weekend to busk on Grafton Street.'
   },
   { 
     header: 'https://i.ytimg.com/vi/hyPnJudsazY/maxresdefault.jpg',
     image: 'https://i.ytimg.com/vi/AregRiqHzbs/maxresdefault.jpg',
+    other: 'Official Channel Uploads',
+    videos: 'https://www.youtube.com/embed/videoseries?list=PL15laV1Ww91xMbNii_EW6ahejKZidr9vp',
+    live: 'https://www.youtube.com/embed/videoseries?list=UUQcfc9A8QgHGo4hjWx7DFjA',
+    music1: 'https://www.youtube.com/embed/wUEtpfJUs7Q',
+    music2: '',
     name: 'Padraig Cahill',
     description: 'Padraig is aged 16 and from Wicklow. He regularly takes the bus to Dublin to busk on Grafton Street, drawing large crowds.'
   },

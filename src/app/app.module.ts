@@ -19,6 +19,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { BuskersListComponent } from './buskers-list/buskers-list.component';
 import { HomeComponent } from './home/home.component';
 import { DetailsComponent } from './details/details.component';
+import { SafePipe } from './safe.pipe';
 
 @NgModule({
   imports:      [
@@ -36,7 +37,7 @@ import { DetailsComponent } from './details/details.component';
     RouterModule.forRoot([
       { path: '', component: HomeComponent, data: { animation: 'isLeft' } },
       { path: 'buskers', component: BuskersListComponent, data: { animation: 'isRight' } },
-      { path: 'buskers/:buskerId', component: DetailsComponent },
+      { path: 'buskers/:buskerId', component: DetailsComponent, data: { animation: 'isRight' } },
       { path: 'toolbar', component: ToolbarComponent },
     ])
   ],
@@ -48,6 +49,7 @@ import { DetailsComponent } from './details/details.component';
     BuskersListComponent,
     HomeComponent,
     DetailsComponent,
+    SafePipe,   
   ],
 
   bootstrap: [ AppComponent ]
