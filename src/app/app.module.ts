@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
@@ -36,7 +36,7 @@ import { SafePipe } from './safe.pipe';
     MatSidenavModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, data: { animation: 'isLeft' } },
-      { path: 'buskers', component: BuskersListComponent, data: { animation: 'isRight' } },
+      { path: 'buskers', component: BuskersListComponent, data: { animation: '' } },
       { path: 'buskers/:buskerId', component: DetailsComponent, data: { animation: 'isRight' } },
       { path: 'toolbar', component: ToolbarComponent },
     ])

@@ -5,11 +5,11 @@
 
 <mat-card class="card">
   <mat-card-header >
-    <div mat-card-avatar class="header-image" [ngStyle]="{'background': '#fff url(' + busker.header + ') no-repeat 0 0', 'background-size': 'cover;','background-position': 'center, center'}"[routerLink]="['/buskers', buskerId]" matRipple [matRippleColor]="myColor"></div>
+    <div mat-card-avatar class="header-image" [ngStyle]="{'background': '#fff url(' + busker.header + ') no-repeat 0 0', 'background-size': 'cover;','background-position': 'center, center'}" [routerLink]="['/buskers', buskerId]" matRipple [matRippleColor]="myColor"></div>
     <mat-card-title [routerLink]="['/buskers', buskerId]">{{ busker.name }}</mat-card-title>
     <mat-card-subtitle>Busker on Grafton Street</mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image src="{{ busker.image }}" alt="Photo of {{ busker.name }}">
+  <img mat-card-image [src]="busker.image" alt="Photo of {{ busker.name }}">
   <mat-card-content>
     <p>
       {{ busker.description }}
