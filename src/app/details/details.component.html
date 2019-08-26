@@ -3,12 +3,43 @@
   <h3>{{ busker.name }}</h3>
 </div>
 
+<mat-accordion>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header style="font-size: 17px">
+      <mat-panel-title style="font-weight: bold;">
+        About {{ busker.name }} 
+      </mat-panel-title>
+      <mat-panel-description>
+        {{panelOpenState ? 'Busker description' : 'click to see'}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p> {{ busker.para1 }} </p>
+    <p> {{ busker.para2 }} </p>
+    
+  </mat-expansion-panel>
+</mat-accordion>
+
 <mat-tab-group mat-stretch-tabs class="stretched-tabs">
   <mat-tab label="About">
-    <mat-card>
-      <p> {{ busker.para1 }} </p>
-      <p> {{ busker.para2 }} </p>
-    </mat-card>
+    <!--
+      <div class="container">
+        <div class="icon">
+          <i class="fa fa-facebook-f"></i>
+        </div>
+        <div class="icon">
+          <i class="fa fa-youtube"></i>
+        </div>
+        <div class="icon">
+          <i class="fa fa-twitter"></i>
+        </div>
+        <div class="icon">
+          <i class="fa fa-instagram"></i>
+        </div>
+      </div>
+    -->
+      
+
 
   </mat-tab>
   <mat-tab label="Videos">
