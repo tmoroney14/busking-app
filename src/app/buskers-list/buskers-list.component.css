@@ -19,23 +19,3 @@ mat-card-title {
   cursor: pointer;
 }
 
-.header-image1 {
-  background-image: url('https://yt3.ggpht.com/a/AGF-l784OUQLYfEn7Hiwd-CGG0vXtwwALwmrPolw9A=s900-mo-c-c0xffffffff-rj-k-no');
-  background-size: cover;
-}
-
-.header-image2 {
-  background-image: url('https://i.ytimg.com/vi/hyPnJudsazY/maxresdefault.jpg');
-  background-size: cover;
-}
-
-.header-image3 {
-  background-image: url('https://scontent.fdub5-1.fna.fbcdn.net/v/t1.0-9/18010165_1039411549492152_5036536940223665555_n.jpg?_nc_cat=101&_nc_oc=AQm9jIj0uE-7W37pNG370V3aH1NwNjhWWsjxK9G6j4kv1ysqqbskihgDnHxVKxWGPAM&_nc_ht=scontent.fdub5-1.fna&oh=f7096f4a39a6ed4611034e5fd8fac2cd&oe=5DB2DA8C');
-  background-size: cover;
-}
-
-.header-image4 {
-  background-image: url('https://ytimg.googleusercontent.com/vi/1LvxwPxfV8M/mqdefault.jpg');
-  background-size: cover;
-}
-

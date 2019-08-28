@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { slider, transformer, fader, stepper } from './route-animations';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'my-app',
@@ -19,7 +18,6 @@ export class AppComponent  {
   prepareRoute(outlet: RouterOutlet) {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
   };
-  faCoffee = faCoffee;
 }
 
 export interface Tile {

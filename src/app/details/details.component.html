@@ -1,6 +1,8 @@
+<body>
 <div>
 <div *ngIf="busker">
   <h3>{{ busker.name }}</h3>
+  <div mat-card-avatar class="header-image" [ngStyle]="{'background': '#fff url(' + busker.header + ') no-repeat 0 0', 'background-size': 'cover;','background-position': 'center, center', 'height': '80px;', 'width': '80px;'}"></div>
 </div>
 
 <mat-accordion>
@@ -22,25 +24,9 @@
 
 <mat-tab-group mat-stretch-tabs class="stretched-tabs">
   <mat-tab label="About">
-    <!--
-      <div class="container">
-        <div class="icon">
-          <i class="fa fa-facebook-f"></i>
-        </div>
-        <div class="icon">
-          <i class="fa fa-youtube"></i>
-        </div>
-        <div class="icon">
-          <i class="fa fa-twitter"></i>
-        </div>
-        <div class="icon">
-          <i class="fa fa-instagram"></i>
-        </div>
-      </div>
-    -->
-      
-
-
+    <mat-card>
+    
+    </mat-card>
   </mat-tab>
   <mat-tab label="Videos">
     <mat-card>
@@ -66,3 +52,4 @@
   </mat-tab>
 </mat-tab-group>
 </div>
+</body>

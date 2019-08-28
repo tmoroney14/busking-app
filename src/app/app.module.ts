@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MaterialModule } from './material';
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -38,7 +37,6 @@ import { SafePipe } from './safe.pipe';
     MatRippleModule,
     MatSidenavModule,
     MatExpansionModule,
-    FontAwesomeModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, data: { animation: 'isLeft' } },
       { path: 'buskers', component: BuskersListComponent, data: { animation: '' } },
