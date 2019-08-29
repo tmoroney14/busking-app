@@ -2,7 +2,6 @@
 <div>
 <div *ngIf="busker">
   <h3>{{ busker.name }}</h3>
-  <div mat-card-avatar class="header-image" [ngStyle]="{'background': '#fff url(' + busker.header + ')', 'background-size': 'cover;','background-position': 'center, center', 'height': '80px;', 'width': '80px;'}"></div>
 </div>
 
 <mat-accordion>
@@ -25,7 +24,7 @@
 <mat-tab-group mat-stretch-tabs class="stretched-tabs">
   <mat-tab label="About">
     <mat-card>
-    
+      
     </mat-card>
   </mat-tab>
   <mat-tab label="Videos">

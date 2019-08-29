@@ -52,7 +52,7 @@ import { SafePipe } from './safe.pipe';
     BuskersListComponent,
     HomeComponent,
     DetailsComponent,
-    SafePipe,   
+    SafePipe,  
   ],
 
   bootstrap: [ AppComponent ]
