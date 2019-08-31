@@ -8,11 +8,11 @@
   <mat-expansion-panel (opened)="panelOpenState = true"
                        (closed)="panelOpenState = false">
     <mat-expansion-panel-header style="font-size: 17px">
-      <mat-panel-title style="font-weight: bold;">
+      <mat-panel-title>
         About {{ busker.name }} 
       </mat-panel-title>
-      <mat-panel-description>
-        {{panelOpenState ? 'Busker description' : 'click to see'}}
+      <mat-panel-description style="font-style: italic;">
+        {{panelOpenState ? '' : 'click to see'}}
       </mat-panel-description>
     </mat-expansion-panel-header>
     <p> {{ busker.para1 }} </p>
@@ -25,7 +25,10 @@
   <mat-tab label="About">
     <mat-card>
       <button mat-mini-fab aria-label="Insta button">
-        Insta
+        <i class="material-icons">face</i>
+      </button>
+      <button mat-mini-fab aria-label="Insta button">
+        <i class="material-icons">face</i>
       </button>
     </mat-card>
   </mat-tab>
