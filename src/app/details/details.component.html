@@ -23,15 +23,29 @@
 
 <mat-tab-group mat-stretch-tabs class="stretched-tabs">
   <mat-tab label="About">
+    <mat-card style="text-align: center">
+      <h3 style="font-size: 22px">Social Media</h3>
+      <div class="example-button-row">
+        <button mat-fab aria-label="Twitter" color="twitter">
+          <fa-icon [icon]="faTwitter" style="font-size: 1.4rem;"></fa-icon>
+        </button>
+        <button mat-fab aria-label="Instagram" color="insta">
+          <fa-icon [icon]="faInstagram" style="font-size: 1.4rem;"></fa-icon>
+        </button>
+        <button mat-fab aria-label="Facebook" color="primary">
+          <fa-icon [icon]="faFacebook" style="font-size: 1.4rem;"></fa-icon>
+        </button>
+        <button mat-fab aria-label="Youtube" color="youtube">
+          <fa-icon [icon]="faYoutube" style="font-size: 1.4rem;"></fa-icon>
+        </button>
+      </div>
+    </mat-card>
     <mat-card>
-      <button mat-mini-fab aria-label="Insta button">
-        <i class="material-icons">face</i>
-      </button>
-      <button mat-mini-fab aria-label="Insta button">
-        <i class="material-icons">face</i>
-      </button>
+    
     </mat-card>
   </mat-tab>
+
+
   <mat-tab label="Videos">
     <mat-card>
       <h3 style="font-size: 26px">All Busking Videos</h3>
