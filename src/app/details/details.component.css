@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lexend+Deca|Raleway|Roboto&display=swap');
+
 
 div {
   height: 100%;
@@ -8,7 +8,8 @@ div {
 
 .example-button-row button,
 .example-button-row a {
-  margin: 12px;
+  margin: 20px;
+  margin-top: 10px
 }
 
 .mat-twitter {
@@ -28,7 +29,7 @@ div {
 
 h3 {
   font-family: 'Lexend Deca', sans-serif;
-  font-size: 50px
+  font-size: 50px;
 }
 
 p {
@@ -44,4 +45,8 @@ p {
 .mat-expansion-panel {
   margin: 15px;
   background-color: #ff8a50;
+}
+
+.header-name {
+  padding-bottom: 30px
 }

@@ -1,13 +1,13 @@
 <body>
 <div>
 <div *ngIf="busker">
-  <h3>{{ busker.name }}</h3>
+  <h3 class="header-name">{{ busker.name }}</h3>
 </div>
 
 <mat-accordion>
   <mat-expansion-panel (opened)="panelOpenState = true"
                        (closed)="panelOpenState = false">
-    <mat-expansion-panel-header style="font-size: 17px">
+    <mat-expansion-panel-header style="font-size: 15px">
       <mat-panel-title>
         About {{ busker.name }} 
       </mat-panel-title>
