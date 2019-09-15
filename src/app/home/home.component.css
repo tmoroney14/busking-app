@@ -1,31 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 
-.parallax {
-    position: absolute;
-    width: 100%;
-    height: 800px;
-    overflow: hidden;
-    left: 0;
+body {
+	margin: 0;
+	width: 100%;
+	height: 60vh;
 }
-.water {
-    position: absolute;
-    width: 100%;
-    height: 800px;
-    left:0;
-    background-repeat: no-repeat;
-    background-position: top center;
+
+h1 {
+	font-weight: 300;
 }
-.water-layer1 {
-    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-1.png);
+
+h3 {
+	color: #eee;
+	font-weight: 100;
 }
-.water-layer2 {
-    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-2.png);
+
+h5 {
+	color:#eee;
+	font-weight:300;
 }
-.water-layer3 {
-    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-3.png);
+
+.bw {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
 }
-.water-layer4 {
-    background-image: url(http://elikirk.com/demos/liquipel/images/water-layer-4.png);
+ 
+.bw:hover {
+  -webkit-filter: grayscale(100%);
+  
 }
+
+.background {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Roboto Slab', serif;
+}
+
+.container-list {
+	width: 100%;
+	position: absolute;
+	top: 100%;
+}
+
 
 /*
 .svg-container {
