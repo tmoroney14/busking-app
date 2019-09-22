@@ -12,6 +12,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card';
 import { MatTabsModule } from '@angular/material/tabs';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { MatRippleModule } from '@angular/material/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatExpansionModule } from '@angular/material/expansion';
@@ -37,6 +38,7 @@ import { SafePipe } from './safe.pipe';
     MatGridListModule,
     MatCardModule,
     MatTabsModule,
+    MatProgressSpinnerModule,
     MatRippleModule,
     MatSidenavModule,
     MatExpansionModule,

@@ -11,9 +11,6 @@
       <mat-panel-title>
         About {{ busker.name }} 
       </mat-panel-title>
-      <mat-panel-description style="font-style: italic;">
-        {{panelOpenState ? '' : 'click to see'}}
-      </mat-panel-description>
     </mat-expansion-panel-header>
     <p> {{ busker.para1 }} </p>
     <p> {{ busker.para2 }} </p>
@@ -21,9 +18,7 @@
   </mat-expansion-panel>
 </mat-accordion>
 
-<mat-tab-group mat-stretch-tabs class="stretched-tabs">
-  <mat-tab label="About">
-    <mat-card style="text-align: center">
+<mat-card style="text-align: center; margin: 15px;">
       <h3 style="font-size: 22px">Social Media</h3>
       <div class="example-button-row">
         <button mat-fab aria-label="Twitter" color="twitter">
@@ -40,32 +35,39 @@
         </button>
       </div>
     </mat-card>
-    <mat-card>
-    
-    </mat-card>
-  </mat-tab>
 
+<mat-tab-group mat-stretch-tabs class="stretched-tabs">
 
   <mat-tab label="Videos">
     <mat-card>
       <h3 style="font-size: 26px">All Busking Videos</h3>
-      <iframe width="100%" height="350" [src]="busker.videos | safe: 'resourceUrl'" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture; gyroscope;" allowfullscreen></iframe>
+      <div id="spinner">
+        <div>
+          <mat-spinner diameter="80"></mat-spinner>   
+        </div>
+      </div>
+      <iframe onload="document.getElementById('spinner').style.display='none';this.style.visibility = 'visible';" width="100%" height="350" [src]="busker.videos | safe: 'resourceUrl'" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture; gyroscope;" allowfullscreen></iframe>
     </mat-card>
 
     <mat-card>
       <h3  style="font-size: 26px">{{ busker.other }}</h3>
-      <iframe width="100%" height="350" [src]="busker.live | safe: 'resourceUrl'" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture; gyroscope;" allowfullscreen></iframe>
+      <iframe onload="document.getElementById('spinner').style.display='none';this.style.visibility = 'visible';" width="100%" height="350" [src]="busker.live | safe: 'resourceUrl'" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture; gyroscope;" allowfullscreen></iframe>
     </mat-card>
 
   </mat-tab>
   <mat-tab label="Music">
+    <div id="spinner">
+        <div>
+          <mat-spinner diameter="80"></mat-spinner>   
+        </div>
+      </div>
     <mat-card>
-      <h3  style="font-size: 26px">{{ busker.musict1 }}</h3>
-      <iframe [src]="busker.music1 | safe: 'resourceUrl'" width="100%" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <h3 style="font-size: 26px">{{ busker.musict1 }}</h3>
+      <iframe onload="document.getElementById('spinner').style.display='none';this.style.visibility = 'visible';" [src]="busker.music1 | safe: 'resourceUrl'" width="100%" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </mat-card>
     <mat-card>
       <h3  style="font-size: 26px">{{ busker.musict2 }}</h3>
-      <iframe [src]="busker.music2 | safe: 'resourceUrl'" width="100%" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <iframe onload="document.getElementById('spinner').style.display='none';this.style.visibility = 'visible';" [src]="busker.music2 | safe: 'resourceUrl'" width="100%" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </mat-card>
   </mat-tab>
 </mat-tab-group>
