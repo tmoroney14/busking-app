@@ -19,7 +19,7 @@
 </mat-accordion>
 
 <mat-card style="text-align: center; margin: 15px;">
-      <h3 style="font-size: 22px">Social Media</h3>
+      <h3 style="font-size: 20px">Social Media</h3>
       <div class="example-button-row">
         <button mat-mini-fab aria-label="Twitter" color="twitter">
           <fa-icon [icon]="faTwitter" style="font-size: 1.3rem;"></fa-icon>
@@ -38,14 +38,23 @@
 
 <mat-tab-group mat-stretch-tabs class="stretched-tabs">
 
-  <mat-tab label="Videos">
-    <mat-card>
-      <h3 style="font-size: 26px">All Busking Videos</h3>
+  <mat-tab label="Photos">
+    <iframe width="100%" height="800" src="https://rss.app/embed/v1/3sI7z0iB0phDbCpl?width=100%" frameBorder="0" onload="document.getElementById('spinner').style.display='none';this.style.visibility = 'visible';"></iframe>
       <div id="spinner">
         <div>
-          <mat-spinner diameter="80"></mat-spinner>   
+          <mat-spinner diameter="80" color="warn"></mat-spinner>   
         </div>
       </div>
+  </mat-tab>
+  <mat-tab label="Videos">
+    <div id="spinner">
+        <div>
+          <mat-spinner diameter="80" color="warn"></mat-spinner>   
+        </div>
+      </div>
+
+    <mat-card>
+      <h3 style="font-size: 26px">All Busking Videos</h3>
       <iframe onload="document.getElementById('spinner').style.display='none';this.style.visibility = 'visible';" width="100%" height="350" [src]="busker.videos | safe: 'resourceUrl'" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture; gyroscope;" allowfullscreen></iframe>
     </mat-card>
 

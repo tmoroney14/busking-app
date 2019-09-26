@@ -1,8 +1,10 @@
 <body class="mat-app-background">
   <app-toolbar></app-toolbar>
   <main [@routeAnimations]="prepareRoute(outlet)" class="content">
+
   <router-outlet #outlet="outlet"></router-outlet>
   </main>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 
 

@@ -16,8 +16,9 @@ div {
 
 .example-button-row button,
 .example-button-row a {
-  margin: 20px;
-  margin-top: 10px
+  margin: 12px;
+  margin-top: 0px;
+  padding: 0px
 }
 
 .mat-twitter {
