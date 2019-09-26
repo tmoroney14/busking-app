@@ -39,43 +39,50 @@
 <mat-tab-group mat-stretch-tabs class="stretched-tabs">
 
   <mat-tab label="Photos">
-    <iframe width="100%" height="800" src="https://rss.app/embed/v1/3sI7z0iB0phDbCpl?width=100%" frameBorder="0" onload="document.getElementById('spinner').style.display='none';this.style.visibility = 'visible';"></iframe>
+
+    <iframe width="100%" height="800" src="https://rss.app/embed/v1/3sI7z0iB0phDbCpl?width=100%" frameBorder="0" onload="this.style.visibility = 'visible';"></iframe>
+      
+  </mat-tab>
+  <mat-tab label="Videos">
+
+    <mat-card>
+      <h3 style="font-size: 26px">All Busking Videos</h3>
       <div id="spinner">
         <div>
           <mat-spinner diameter="80" color="warn"></mat-spinner>   
         </div>
       </div>
-  </mat-tab>
-  <mat-tab label="Videos">
-    <div id="spinner">
-        <div>
-          <mat-spinner diameter="80" color="warn"></mat-spinner>   
-        </div>
-      </div>
-
-    <mat-card>
-      <h3 style="font-size: 26px">All Busking Videos</h3>
       <iframe onload="document.getElementById('spinner').style.display='none';this.style.visibility = 'visible';" width="100%" height="350" [src]="busker.videos | safe: 'resourceUrl'" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture; gyroscope;" allowfullscreen></iframe>
     </mat-card>
 
     <mat-card>
       <h3  style="font-size: 26px">{{ busker.other }}</h3>
+      <div id="spinner">
+        <div>
+          <mat-spinner diameter="80" color="warn"></mat-spinner>   
+        </div>
+      </div>
       <iframe onload="document.getElementById('spinner').style.display='none';this.style.visibility = 'visible';" width="100%" height="350" [src]="busker.live | safe: 'resourceUrl'" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture; gyroscope;" allowfullscreen></iframe>
     </mat-card>
 
   </mat-tab>
   <mat-tab label="Music">
-    <div id="spinner">
+    <mat-card>
+      <h3 style="font-size: 26px">{{ busker.musict1 }}</h3>
+      <div id="spinner">
         <div>
           <mat-spinner diameter="80"></mat-spinner>   
         </div>
       </div>
-    <mat-card>
-      <h3 style="font-size: 26px">{{ busker.musict1 }}</h3>
       <iframe onload="document.getElementById('spinner').style.display='none';this.style.visibility = 'visible';" [src]="busker.music1 | safe: 'resourceUrl'" width="100%" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </mat-card>
     <mat-card>
       <h3  style="font-size: 26px">{{ busker.musict2 }}</h3>
+      <div id="spinner">
+        <div>
+          <mat-spinner diameter="80"></mat-spinner>   
+        </div>
+      </div>
       <iframe onload="document.getElementById('spinner').style.display='none';this.style.visibility = 'visible';" [src]="busker.music2 | safe: 'resourceUrl'" width="100%" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </mat-card>
   </mat-tab>
