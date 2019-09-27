@@ -5,3 +5,8 @@ main {
   text-align: left;
   position: relative;
 }
+
+html,
+body {
+  height: 100%;
+}
