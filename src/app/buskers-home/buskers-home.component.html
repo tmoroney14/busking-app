@@ -1,0 +1,23 @@
+
+<p class="title">Buskers</p>
+<div class="grid">
+<div *ngFor="let busker of buskers | slice:0:4; let i=index; index as buskerId;">
+  
+<mat-card class="card" [routerLink]="['/buskers', buskerId]" matRipple
+     [matRippleCentered]="centered"
+     [matRippleDisabled]="disabled"
+     [matRippleUnbounded]="unbounded"
+     [matRippleRadius]="radius"
+     [matRippleColor]="color">
+  <img mat-card-image [src]="busker.image" alt="Photo of {{ busker.name }}">
+  <mat-card-header >
+    <mat-card-title>{{ busker.name }}</mat-card-title>
+    <mat-card-subtitle style="color:white;">{{ busker.description }}</mat-card-subtitle>
+  </mat-card-header>
+</mat-card>
+
+</div>
+
+</div>
+
+<button mat-raised-button color="warn" [routerLink]="['/buskers']" >More Buskers</button>

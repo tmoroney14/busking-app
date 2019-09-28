@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Roboto+Slab&display=swap');
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -5,8 +7,14 @@
   max-width: 100%;
   padding: 25px;
   background-color: #eeeeee;
+  padding-top: 12px
 }
 
+button {
+  margin:auto;
+  display:block;
+  margin-bottom: 60px
+}
 
 .card {
   max-width: 600px;
@@ -25,6 +33,7 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+
 mat-card-title {
   cursor: pointer;
 }
@@ -37,9 +46,8 @@ mat-card-title {
   font-family: 'Quicksand', sans-serif;
   font-size: 30px;
   padding: 0;
-  margin-top: 10;
+  margin-top: 20;
   margin-bottom: 0;
   font-weight: 700;
   text-align: center;
 }
-
