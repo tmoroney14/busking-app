@@ -16,6 +16,7 @@ import { buskers } from '../buskers';
 
 
 export class DetailsComponent implements OnInit {
+  
   panelOpenState = false;
   
   faTwitter = faTwitter;

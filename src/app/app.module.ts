@@ -27,6 +27,7 @@ import { DetailsComponent } from './details/details.component';
 import { SafePipe } from './safe.pipe';
 import { TopperComponent } from './topper/topper.component';
 import { BuskersHomeComponent } from './buskers-home/buskers-home.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 
 
@@ -52,6 +53,7 @@ import { BuskersHomeComponent } from './buskers-home/buskers-home.component';
       { path: 'buskers', component: BuskersListComponent, data: { animation: '' } },
       { path: 'buskers/:buskerId', component: DetailsComponent, data: { animation: 'isRight' } },
       { path: 'toolbar', component: ToolbarComponent },
+      { path: 'sidenav', component: SidenavComponent}
     ])
   ],
 
@@ -65,6 +67,7 @@ import { BuskersHomeComponent } from './buskers-home/buskers-home.component';
     SafePipe,
     TopperComponent,
     BuskersHomeComponent,
+    SidenavComponent,
   ],
 
   bootstrap: [ AppComponent ]
