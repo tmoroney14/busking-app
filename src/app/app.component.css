@@ -3,7 +3,8 @@
 p {
   font-family: Lato;
 }
-html, body {
+body {
   height: 100%;
   margin: -8px;
+  background-color: #eeeeee;
 }

@@ -1,10 +1,12 @@
-<body class="mat-app-background">
+<body>
   <app-toolbar></app-toolbar>
   <main [@routeAnimations]="prepareRoute(outlet)" class="content">
     
   <router-outlet #outlet="outlet" (activate)="onActivate($event)"></router-outlet>
   </main>
+
 </body>
+
 
 
 

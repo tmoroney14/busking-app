@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Roboto+Slab&display=swap');
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 1rem;
+  max-width: 100%;
+  padding: 25px
+}
+
+.news-card {
+  border-radius: 7px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  margin: 15px;
+  color: black;
+}
+
+.twitter-card {
+  max-height: 650px;
+  border-radius: 7px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  background-color: #292F33;
+  margin: 0px
+}
+
+h3 {
+  color: #ffffff;
+  font-family: 'Lexend Deca', sans-serif;
+  text-align: center;
+}
+
+.container-list {
+	width: 100%;
+  position: absolute;
+	top: 60%;
+  background-color: #eeeeee
+}
+
+.container-topper {
+	width: 100%;
+	position: absolute;
+}

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 
 body {
   font-family: 'Segoe UI', 'San Francisco', Calibri, Helvetica, Arial, sans-serif;
@@ -43,10 +43,11 @@ background: linear-gradient(135deg, #000000 0%,#000000 25%,#1e539e 50%,#ff3083 7
   &__title {
     position: relative;
     z-index: 10;
-    text-transform: uppercase;
+    text-transform: lowercase;
     letter-spacing: .02em;
-    font-family: 'Fredoka One', cursive;
-    font-size: 200%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 250%;
   }
   
   &:hover {
@@ -56,10 +57,4 @@ background: linear-gradient(135deg, #000000 0%,#000000 25%,#1e539e 50%,#ff3083 7
       text-shadow: 0 0 20px rgba(0,0,0,1);
     }
   }
-}
-
-.container-list {
-	width: 100%;
-	position: absolute;
-	top: 60%;
 }

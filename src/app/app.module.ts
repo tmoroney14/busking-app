@@ -25,6 +25,7 @@ import { BuskersListComponent } from './buskers-list/buskers-list.component';
 import { HomeComponent } from './home/home.component';
 import { DetailsComponent } from './details/details.component';
 import { SafePipe } from './safe.pipe';
+import { TopperComponent } from './topper/topper.component';
 
 
 
@@ -61,6 +62,7 @@ import { SafePipe } from './safe.pipe';
     HomeComponent,
     DetailsComponent,
     SafePipe,
+    TopperComponent,
   ],
 
   bootstrap: [ AppComponent ]
