@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import $ from "jquery";
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +6,7 @@ import $ from "jquery";
   styleUrls: ['./home.component.css']
 })
 
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, AfterViewInit {
 
   constructor() {
     
@@ -16,6 +15,11 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     
   }
+
+  ngAfterViewInit(): void {
+    // @ts-ignore
+    twttr.widgets.load();
+}
 }
 
 export interface Tile {

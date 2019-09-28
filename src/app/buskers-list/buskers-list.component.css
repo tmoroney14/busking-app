@@ -27,6 +27,7 @@
 
 mat-card-title {
   cursor: pointer;
+  font-family: 'Lexend Deca', sans-serif;
 }
 
 .header-image {

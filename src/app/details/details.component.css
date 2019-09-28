@@ -1,7 +1,9 @@
 mat-spinner {
-  margin-left:30%;
-  margin-top: 25%;
-  position: fixed;
+  margin:auto;
+  display:block;
+  top: 45%;
+  left: 45%;
+  position: absolute;
 }
 
 
