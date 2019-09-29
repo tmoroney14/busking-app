@@ -35,6 +35,10 @@ export const buskers = [
     description: 'Padraig is aged 16 and from Wicklow. He regularly takes the bus to Dublin to busk on Grafton Street, drawing large crowds.',
     para1: 'Padraig is aged 16 and from Wicklow. He regularly takes the bus to Dublin to busk on Grafton Street, drawing large crowds.',
     para2: '',
+    twitter: '',
+    insta: 'https://www.instagram.com/padraigcahill_music',
+    facebook: 'https://www.facebook.com/padraigcahill.music',
+    youtube: 'https://www.youtube.com/channel/UCQcfc9A8QgHGo4hjWx7DFjA',
   },
 
   {
@@ -51,7 +55,11 @@ export const buskers = [
 
     description: 'Jacob is a Singer/Songwriter that can be found playing venues around Ireland and busking on Grafton Street playing a mixture of original and cover music.',
     para1: 'Jacob’s Bali roots provides him with an indie pop style but his early influences such as Dave Grohl and Chris Cornell give an edge to his island vibe. He is a Singer/Songwriter who started playing drums at 9 years old. Self taught he also plays the guitar and bass.',
-    para2: 'Playing a mixture of original and cover music Jacob can be found playing venues around Ireland along with paying his dues by busking.'
+    para2: 'Playing a mixture of original and cover music Jacob can be found playing venues around Ireland along with paying his dues by busking.',
+    twitter: '',
+    insta: 'https://www.instagram.com/jakumaru',
+    facebook: 'https://www.facebook.com/Jacobpkoopman',
+    youtube: 'https://www.youtube.com/user/MrJackPhantom',
   },
 
   {

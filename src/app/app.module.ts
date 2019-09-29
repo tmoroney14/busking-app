@@ -17,6 +17,7 @@ import { MatRippleModule } from '@angular/material/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import {MatDividerModule} from '@angular/material/divider';
 
 import { AppComponent } from './app.component';
 import { LogoComponent } from './logo/logo.component';
@@ -47,6 +48,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     MatSidenavModule,
     MatExpansionModule,
     MatTooltipModule,
+    MatDividerModule,
     FontAwesomeModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, data: { animation: 'isLeft' } },
