@@ -1,4 +1,6 @@
-import { Component, OnInit, AfterViewInit, HostListener, ViewChild } from '@angular/core';
+import { Component, AfterViewInit, ViewChild, HostListener } from '@angular/core';
+import { BehaviorSubject, Observable } from 'rxjs';
+import {MatSidenav} from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-home',
@@ -6,30 +8,47 @@ import { Component, OnInit, AfterViewInit, HostListener, ViewChild } from '@angu
   styleUrls: ['./home.component.css']
 })
 
-export class HomeComponent implements OnInit, AfterViewInit {
-  
-  @ViewChild('sidenav') sidenav: MatDrawer;
+export class HomeComponent implements AfterViewInit {
 
-    @HostListener('window:resize', ['$event'])
-    onResize(event) {
-        if (event.target.innerWidth < 800) {
-            this.sidenav.close();
-        }
-        else { this.sidenav.open(); }
-    }
+ showToggle: string;
+  mode: string;
+  openSidenav:boolean;
+  private screenWidth$ = new BehaviorSubject<number>
+    (window.innerWidth);
 
-  constructor() {
-    
-  }
+  @ViewChild('sidenav') matSidenav: MatSidenav;
+
+  constructor() { }
+
 
   ngOnInit() {
-    
+    this.getScreenWidth().subscribe(width => {
+       if (width < 640) {
+        this.showToggle = 'show';
+        this.mode = 'over';
+        this.openSidenav = false;
+      }
+      else if (width > 640) {
+        this.showToggle = 'hide';
+        this.mode = 'side';
+        this.openSidenav = true;
+      }
+    });
   }
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.screenWidth$.next(event.target.innerWidth);
+  }
+  getScreenWidth(): Observable<number> {
+    return this.screenWidth$.asObservable();
+  }
+
 
   ngAfterViewInit(): void {
     // @ts-ignore
     twttr.widgets.load();
 }
+
 }
 
 export interface Tile {

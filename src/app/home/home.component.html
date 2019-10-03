@@ -2,9 +2,9 @@
 
 <div class="container-list">
   <mat-drawer-container class="sidenav-container">
-  <mat-drawer #sidenav mode="side" opened>Drawer content</mat-drawer>
+  <mat-drawer mode="side" #sidenav [opened]="openSidenav" >Drawer content</mat-drawer>
   <mat-drawer-content>
-  <div class="container-twitter">
+  <div class="centered">
   <mat-card class="twitter-card">
   <h3 style="font-size: 25px">LIVE BOX</h3>
   <a class="twitter-timeline" data-height="450px" data-width="100%" data-theme="dark" data-link-color="#2B7BB9" href="https://twitter.com/BotBusking?ref_src=twsrc%5Etfw">Tweets from our Robot</a>

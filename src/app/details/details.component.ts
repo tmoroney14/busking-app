@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChild, HostListener } from '@angular/core';
 import { ActivatedRoute, RouterModule, Routes } from '@angular/router';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
@@ -23,8 +23,6 @@ export class DetailsComponent implements OnInit, AfterViewInit {
   faInstagram = faInstagram;
   faFacebook = faFacebook;
   faYoutube = faYoutube;
-  
-    
 
   constructor(
     private route: ActivatedRoute,
