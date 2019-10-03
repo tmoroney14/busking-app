@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { ActivatedRoute, RouterModule, Routes } from '@angular/router';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
@@ -15,7 +15,7 @@ import { buskers } from '../buskers';
 })
 
 
-export class DetailsComponent implements OnInit {
+export class DetailsComponent implements OnInit, AfterViewInit {
   
   panelOpenState = false;
   
@@ -30,6 +30,10 @@ export class DetailsComponent implements OnInit {
     private route: ActivatedRoute,
   ) {
     
+  }
+
+  ngAfterViewInit() {
+   window.scrollTo(0, 0);
   }
 
   ngOnInit() {

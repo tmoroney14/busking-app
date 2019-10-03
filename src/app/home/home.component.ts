@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, HostListener, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +7,16 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 })
 
 export class HomeComponent implements OnInit, AfterViewInit {
+  
+  @ViewChild('sidenav') sidenav: MatDrawer;
+
+    @HostListener('window:resize', ['$event'])
+    onResize(event) {
+        if (event.target.innerWidth < 800) {
+            this.sidenav.close();
+        }
+        else { this.sidenav.open(); }
+    }
 
   constructor() {
     
