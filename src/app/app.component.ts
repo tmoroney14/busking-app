@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener, ViewChild } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet,  NavigationEnd } from '@angular/router';
 import { slider, transformer, fader, stepper } from './route-animations';
 
 @Component({
@@ -14,10 +14,11 @@ import { slider, transformer, fader, stepper } from './route-animations';
   ]
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit {
   prepareRoute(outlet: RouterOutlet) {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
   };
+
 
 }
 

@@ -23,12 +23,12 @@ export class HomeComponent implements AfterViewInit {
 
   ngOnInit() {
     this.getScreenWidth().subscribe(width => {
-       if (width < 640) {
+       if (width < 700) {
         this.showToggle = 'show';
         this.mode = 'over';
         this.openSidenav = false;
       }
-      else if (width > 640) {
+      else if (width > 700) {
         this.showToggle = 'hide';
         this.mode = 'side';
         this.openSidenav = true;
