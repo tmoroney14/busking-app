@@ -1,6 +1,3 @@
-
-
-
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -20,7 +17,12 @@
   border-radius: 7px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
   background-color: #292F33;
-  margin: 35px
+  margin: 35px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 800px;
+  float: centre;
 }
 
 h3 {
@@ -28,16 +30,19 @@ h3 {
   font-family: 'Quicksand', sans-serif;
   font-weight: bolder;
   text-align: center;
+  margin: 0px
 }
 
 .container-list {
 	width: 100%;
   position: absolute;
 	top: 60%;
-  background-color: #eeeeee
+  background-color: #eeeeee;
 }
 
 .container-topper {
 	width: 100%;
 	position: absolute;
 }
+
+

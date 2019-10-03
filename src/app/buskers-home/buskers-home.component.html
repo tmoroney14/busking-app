@@ -1,7 +1,7 @@
 
 <p class="title">Buskers</p>
 <div class="grid">
-<div *ngFor="let busker of buskers | slice:0:4; let i=index; index as buskerId;">
+<div *ngFor="let busker of buskers | slice:0:8; let i=index; index as buskerId;">
   
 <mat-card class="card" [routerLink]="['/buskers', buskerId]" matRipple
      [matRippleCentered]="centered"
