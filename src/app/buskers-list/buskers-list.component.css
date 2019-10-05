@@ -7,6 +7,27 @@
   background-color: #eeeeee;
 }
 
+.sidenav-container {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  border: 0px #eeeeee;
+  background-color: #eeeeee;
+}
+
+mat-drawer {
+  width: 20%;
+  background-color: #cfd8dc;
+}
+
+.Advert {
+  margin: 20px;
+  color: #484848;
+  font-weight: lighter;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px
+}
 
 .card {
   max-width: 600px;

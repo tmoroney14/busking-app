@@ -120,10 +120,10 @@ export const buskers = [
     description: 'Aged 15, Saibh is from Dublin and busks on Grafton Street regularly, playing covers.',
     para1: 'Aged 15, Saibh is from Dublin and busks on Grafton Street regularly, playing covers.',
     para2: '',
-    twitter: '',
-    insta: 'https://www.instagram.com/saibhskellymusic',
-    facebook: 'https://www.facebook.com/saibhskellymusic',
-    youtube: 'https://www.youtube.com/channel/UCZfseNRa3zHbw2dD5JLiRLg',
+    twitter: 'https://twitter.com/Samcliffordmus1',
+    insta: 'https://www.instagram.com/samcliffordmusic/',
+    facebook: '',
+    youtube: 'https://www.youtube.com/channel/UCBZk7aAZWC3-G7xWlVUp09Q',
   },
 
   
