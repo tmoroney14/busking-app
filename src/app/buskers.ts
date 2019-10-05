@@ -63,9 +63,24 @@ export const buskers = [
   },
 
   {
-    image: 'https://i.ytimg.com/vi/U1a_KiDId0k/maxresdefault.jpg',
     name: 'Saibh Skelly',
-    description: 'Aged 15, Saibh is from Dublin and busks on Grafton Street regularly, playing covers.'
+
+    image: 'https://i.ytimg.com/vi/U1a_KiDId0k/maxresdefault.jpg',
+    videos: 'https://www.youtube.com/embed/videoseries?list=PL7Hzq1i4Oc9Cvb7bXO4MXxN8YTIMLnPfs',
+    other: 'Channel Uploads',
+    live: 'https://www.youtube.com/embed/videoseries?list=UUZfseNRa3zHbw2dD5JLiRLg',
+    musict1: 'Interview',
+    musict2: 'Collaboration',
+    music1: 'https://www.youtube.com/embed/OQlZT4EVGO8',
+    music2: 'https://www.youtube.com/embed/Pxm30ayyCoA',
+
+    description: 'Aged 15, Saibh is from Dublin and busks on Grafton Street regularly, playing covers.',
+    para1: 'Aged 15, Saibh is from Dublin and busks on Grafton Street regularly, playing covers.',
+    para2: '',
+    twitter: '',
+    insta: 'https://www.instagram.com/saibhskellymusic',
+    facebook: 'https://www.facebook.com/saibhskellymusic',
+    youtube: 'https://www.youtube.com/channel/UCZfseNRa3zHbw2dD5JLiRLg',
   },
 
   {
