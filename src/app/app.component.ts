@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { RouterOutlet,  NavigationEnd } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { slider, transformer, fader, stepper } from './route-animations';
 
