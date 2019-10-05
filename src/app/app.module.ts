@@ -20,7 +20,6 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDividerModule } from '@angular/material/divider';
 
 import { AppComponent } from './app.component';
-import { LogoComponent } from './logo/logo.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { BuskersListComponent } from './buskers-list/buskers-list.component';
 import { HomeComponent } from './home/home.component';
@@ -34,9 +33,9 @@ import { BuskersHomeComponent } from './buskers-home/buskers-home.component';
 @NgModule({
   imports:      [
     BrowserModule,
+    BrowserAnimationsModule,
     FlexLayoutModule,
     FormsModule,
-    BrowserAnimationsModule,
     MaterialModule,
     MatToolbarModule,
     MatGridListModule,
@@ -59,7 +58,6 @@ import { BuskersHomeComponent } from './buskers-home/buskers-home.component';
 
   declarations: [
     AppComponent,
-    LogoComponent,
     ToolbarComponent,
     BuskersListComponent,
     HomeComponent,
