@@ -8,13 +8,13 @@ import { slider, transformer, fader, stepper } from './route-animations';
   styleUrls: [ './app.component.css' ],
   animations: [
     // fader,
-    slider,
+    // slider,
     // transformer,
     // stepper
   ]
 })
 
-export class AppComponent implements OnInit {
+export class AppComponent {
   prepareRoute(outlet: RouterOutlet) {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
   };

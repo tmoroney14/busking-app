@@ -51,7 +51,7 @@ import { BuskersHomeComponent } from './buskers-home/buskers-home.component';
     FontAwesomeModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, data: { animation: 'isLeft' } },
-      { path: 'buskers', component: BuskersListComponent, data: { animation: '' } },
+      { path: 'buskers', component: BuskersListComponent },
       { path: 'buskers/:buskerId', component: DetailsComponent, data: { animation: 'isRight' } },
       { path: 'toolbar', component: ToolbarComponent },
     ])
