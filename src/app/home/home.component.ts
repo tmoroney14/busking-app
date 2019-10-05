@@ -1,4 +1,5 @@
 import { Component, AfterViewInit, ViewChild, HostListener } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 import { BehaviorSubject, Observable } from 'rxjs';
 import {MatSidenav} from '@angular/material/sidenav';
 
@@ -10,7 +11,7 @@ import {MatSidenav} from '@angular/material/sidenav';
 
 export class HomeComponent implements AfterViewInit {
 
- showToggle: string;
+  showToggle: string;
   mode: string;
   openSidenav:boolean;
   private screenWidth$ = new BehaviorSubject<number>
@@ -18,17 +19,15 @@ export class HomeComponent implements AfterViewInit {
 
   @ViewChild('sidenav') matSidenav: MatSidenav;
 
-  constructor() { }
-
 
   ngOnInit() {
     this.getScreenWidth().subscribe(width => {
-       if (width < 700) {
+       if (width < 900) {
         this.showToggle = 'show';
         this.mode = 'over';
         this.openSidenav = false;
       }
-      else if (width > 700) {
+      else if (width > 900) {
         this.showToggle = 'hide';
         this.mode = 'side';
         this.openSidenav = true;
@@ -46,14 +45,9 @@ export class HomeComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     // @ts-ignore
-    twttr.widgets.load();
+    twttr.widgets.load(
+  document.getElementById("container")
+);
 }
 
-}
-
-export interface Tile {
-  color: string;
-  cols: number;
-  rows: number;
-  text: string;
 }

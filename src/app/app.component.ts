@@ -1,5 +1,6 @@
-import { Component, OnInit, HostListener, ViewChild } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { RouterOutlet,  NavigationEnd } from '@angular/router';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { slider, transformer, fader, stepper } from './route-animations';
 
 @Component({
@@ -14,7 +15,7 @@ import { slider, transformer, fader, stepper } from './route-animations';
   ]
 })
 
-export class AppComponent {
+export class AppComponent implements OnDestroy {
   prepareRoute(outlet: RouterOutlet) {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
   };

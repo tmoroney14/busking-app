@@ -24,6 +24,11 @@ div {
   margin-right: 12px
 }
 
+.social-media {
+  text-align: center;
+  background-color: #4dd0e1;
+}
+
 .example-button-row button,
 .example-button-row a {
   margin: 12px;
