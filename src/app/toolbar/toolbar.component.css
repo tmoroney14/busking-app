@@ -9,3 +9,8 @@ a:-webkit-any-link {
     cursor: pointer;
     text-decoration: none;
 }
+
+span {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: lighter
+}

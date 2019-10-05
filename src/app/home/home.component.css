@@ -30,6 +30,12 @@ h3 {
   margin: 0px
 }
 
+.Advert {
+  margin: 20px;
+  color: #484848;
+  font-weight: lighter;
+}
+
 .container-list {
 	width: 100%;
   position: absolute;
@@ -61,7 +67,8 @@ h3 {
 }
 
 mat-drawer {
-  width: 28%
+  width: 20%;
+  background-color: #cfd8dc;
 }
 
 .footer {
