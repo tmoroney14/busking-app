@@ -67,11 +67,11 @@ export const buskers = [
 
     image: 'https://i.ytimg.com/vi/U1a_KiDId0k/maxresdefault.jpg',
     videos: 'https://www.youtube.com/embed/videoseries?list=PL7Hzq1i4Oc9Cvb7bXO4MXxN8YTIMLnPfs',
-    other: 'Channel Uploads',
-    live: 'https://www.youtube.com/embed/videoseries?list=UUZfseNRa3zHbw2dD5JLiRLg',
-    musict1: 'Interview',
+    other: 'Interview',
+    live: 'https://www.youtube.com/embed/OQlZT4EVGO8',
+    musict1: 'Channel Uploads',
     musict2: 'Collaboration',
-    music1: 'https://www.youtube.com/embed/OQlZT4EVGO8',
+    music1: 'https://www.youtube.com/embed/videoseries?list=UUZfseNRa3zHbw2dD5JLiRLg',
     music2: 'https://www.youtube.com/embed/Pxm30ayyCoA',
 
     description: 'Aged 15, Saibh is from Dublin and busks on Grafton Street regularly, playing covers.',
@@ -98,7 +98,34 @@ export const buskers = [
 
     description: 'Paul Jenkinson is an acoustic artist and accomplished songwriter who can be found often busking on Grafton Street.',
     para1: 'Mainly found capturing ears and hearts while busking along Grafton Street, Paul Jenkinson is an acoustic artist who is also an accomplished songwriter.',
-    para2: 'Inspired by a wide range of talents, including Hozier, Biffy Clyro and The 1975, his music hints at these influences, while also featuring his own fresh sound. Jenkinson recorded his latest release with Jacob Koopman, of Phantom Records, a good friend and fellow busker.'
+    para2: 'Inspired by a wide range of talents, including Hozier, Biffy Clyro and The 1975, his music hints at these influences, while also featuring his own fresh sound. Jenkinson recorded his latest release with Jacob Koopman, of Phantom Records, a good friend and fellow busker.',
+    twitter: 'https://twitter.com/Paul_Jenkinson_?s=17',
+    insta: 'https://www.instagram.com/pauljenkomusic/',
+    facebook: 'https://www.facebook.com/pauljenkomusic/',
+    youtube: 'https://www.youtube.com/channel/UC1XkRRVbQSS8-3X48iMGOVA',
   },
+
+{
+    name: 'Sam Clifford',
+
+    image: 'https://i.ytimg.com/vi/tO3NQfkNiaQ/maxresdefault.jpg',
+    videos: 'https://www.youtube.com/embed/videoseries?list=PL7Hzq1i4Oc9Bo8YyPLdXLBy15sF-Fn_Aq',
+    other: 'Interview',
+    live: 'https://www.youtube.com/embed/Wi7FI8DA5qU',
+    musict1: 'Channel Uploads',
+    musict2: 'Collaboration',
+    music1: 'https://www.youtube.com/embed/videoseries?list=UUBZk7aAZWC3-G7xWlVUp09Q',
+    music2: 'https://www.youtube.com/embed/x3iIbqy0PCM',
+
+    description: 'Aged 15, Saibh is from Dublin and busks on Grafton Street regularly, playing covers.',
+    para1: 'Aged 15, Saibh is from Dublin and busks on Grafton Street regularly, playing covers.',
+    para2: '',
+    twitter: '',
+    insta: 'https://www.instagram.com/saibhskellymusic',
+    facebook: 'https://www.facebook.com/saibhskellymusic',
+    youtube: 'https://www.youtube.com/channel/UCZfseNRa3zHbw2dD5JLiRLg',
+  },
+
+  
 
 ];
